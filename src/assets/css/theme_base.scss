@@ -1,0 +1,14 @@
+@import './vars.scss';
+@import './mixins.scss';
+
+.button-base{
+    @include button-base(yellow,black,120px);
+    border-color: olive;
+}
+
+.button-stylish{
+    border-color: yellow;
+    background-color: olive;
+}
+
+

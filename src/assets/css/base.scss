@@ -1,0 +1,24 @@
+@import './vars.scss';
+@import './mixins.scss';
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: $font-family-glob;
+    font-size: $font-size-glob;
+    line-height: $line-height-glob;
+}
+
+.button-normal{
+    min-width: 80px;
+}
+
+.button-bordered{
+    @extend .button-normal;
+    @include border-normal;
+    height: 60px;
+    background-color: red;
+}

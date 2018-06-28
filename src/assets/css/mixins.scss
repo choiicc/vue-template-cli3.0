@@ -1,0 +1,12 @@
+@import './vars.scss';
+
+@mixin border-normal {
+    border: 1px solid $border-color-normal;
+    border-radius: $border-radius-normal;
+}
+
+@mixin button-base($bg-color: #fff, $border-color: #000,$width: 100px) {
+    background-color: $bg-color;
+    border-color: $border-color;
+    width: $width;
+}
