@@ -7,8 +7,13 @@
 }
 
 .button-stylish{
+    @extend .button-base;
     border-color: yellow;
     background-color: olive;
 }
 
+.button-stylish1{
+    @extend .button-stylish;
+    box-shadow: 0 0 10px 10px gray;
+}
 

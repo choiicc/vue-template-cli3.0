@@ -8,6 +8,8 @@
     <button class="button-base">scss样式测试</button>
     <br/>
     <button class="button-stylish">scss样式测试</button>
+    <br/>
+    <button class="button-stylish1">scss样式测试</button>
     <test-componet msg="一条消息"/>
     <!-- <test-componet msg="两条消息">非默认又是一个样子的</test-componet> -->
   </div>
@@ -31,7 +33,7 @@ export default {
     },
     getSlotConfig(){
       this.$store.dispatch('fetchGameConfig').then(res => {
-        console.log('查询完成')
+        console.log('查询完成', res)
       })
     }
   },
